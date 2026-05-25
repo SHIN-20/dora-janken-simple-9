@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ロボキャットじゃんけん Ver.2</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <h1>ロボキャットじゃんけん Ver.2</h1>
+
+    <div class="scores">
+      <div><span>勝ち</span><b id="wins">0</b></div>
+      <div><span>負け</span><b id="losses">0</b></div>
+      <div><span>あいこ</span><b id="draws">0</b></div>
+    </div>
+
+    <div class="stage">
+      <div class="enemy" id="enemy">
+        <img src="assets/Dora_001_cutout.png" alt="ブルー・ロボキャット">
+      </div>
+      <div class="balloon" id="enemy-hand">?</div>
+    </div>
+
+    <p class="dialogue" id="dialogue">「さあ、じゃんけんで勝負だ！」</p>
+
+    <div class="player">
+      <div class="hand" id="player-hand">?</div>
+      <p class="message" id="message">手を選んでください!</p>
+    </div>
+
+    <div class="buttons">
+      <button data-hand="rock">✊<b>グー</b></button>
+      <button data-hand="scissors">✌️<b>チョキ</b></button>
+      <button data-hand="paper">✋<b>パー</b></button>
+      <button id="reset">↺<b>リセット</b></button>
+    </div>
+  </main>
+
+  <script src="js/sound.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
